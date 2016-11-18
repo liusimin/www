@@ -29,7 +29,7 @@ angular.module('yoApp')
 .directive("auto",function(){
 	return{
 		restrict:'AEMC', 
-		template:'<div class="da"><li ng-repeat="i in d">{{i.title | limitTo:5}}{{i.title.length>5?".....":""}}</li><li ng-repeat="b in x">{{b.title | limitTo:5}}{{i.title.length>5?".....":""}}</li></div><div ><img  ng-repeat="t in s" ng-src="{{t.img}}" /></div>',
+		template:'<div><li ng-repeat="i in d">{{i.title | limitTo:5}}{{i.title.length>5?".....":""}}</li><li ng-repeat="b in x">{{b.title | limitTo:5}}{{i.title.length>5?".....":""}}</li></div><div ><img  ng-repeat="t in s" ng-src="{{t.img}}" /></div>',
 		scope:true,
 		transclude: true,
 		scope:{d:"=data",s:"=data2",x:"=data1"},
